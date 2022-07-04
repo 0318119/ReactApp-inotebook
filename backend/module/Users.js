@@ -16,8 +16,11 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
+    // date:{
+    //     type: date.now
+    // },
 });
 
 UserValidate =  mongoose.model('user', UserSchema);
-UserValidate.createIndexes();
+// UserValidate.createIndexes();
 module.exports = UserValidate
